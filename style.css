@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    background: #30348C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Borda LGBT ao redor de toda a tela */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 3px solid;
+    border-image: linear-gradient(
+        90deg,
+        #e40303 0%,
+        #ff8c00 16.66%,
+        #ffed00 33.33%,
+        #008026 50%,
+        #24408e 66.66%,
+        #732982 83.33%,
+        #e40303 100%
+    ) 1;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.container {
+    text-align: center;
+    max-width: 900px;
+    width: 100%;
+    padding: 40px 20px;
+}
+
+.logo-container {
+    margin-bottom: 30px;
+}
+
+.logo {
+    max-width: 70%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.blog-title {
+    font-family: 'Satisfy', cursive;
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin: 30px 0 6px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5),
+                 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #f2cb05;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.contact-item {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 15px 30px;
+    border: 2px solid transparent;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    min-width: 320px;
+}
+
+.contact-item:hover {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.icon {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatsapp {
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+}
+
+.email {
+    background: linear-gradient(135deg, #EA4335 0%, #C5221F 100%);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .blog-title {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .contact-item {
+        min-width: 280px;
+        font-size: 1rem;
+        padding: 12px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    body::before {
+        border-width: 5px;
+    }
+
+    .blog-title {
+        font-size: 1.5rem;
+    }
+
+    .contact-item {
+        min-width: 240px;
+        font-size: 0.9rem;
+    }
+}
