@@ -1,50 +1,340 @@
-<!DOCTYPE html>
+<!-- /public_html/index.html -->
+<!doctype html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parça Corp</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Satisfy&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Parça Corp — consultoria estratégica em Inteligência Artificial com método, humor ácido e implementação prática. Do caos à estrutura." />
+  <title>Parça Corp — Do caos à estrutura</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Parça Corp — Do caos à estrutura" />
+  <meta property="og:description" content="IA com método. Humor ácido com propósito. Consultoria e automação aplicada." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.parcacorp.com.br/" />
+
+  <!-- Fonts (opcional) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/reset.css" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <link rel="stylesheet" href="/assets/css/components.css" />
 </head>
 
 <body>
-    <div class="container">
-        <div class="logo-container">
-            <img src="parca3.png" alt="Parca Corp" class="logo">
-        </div>
+  <!-- Header (cole em todas as páginas) -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="brand" href="/index.html" aria-label="Parça Corp - Início">
+        <img src="/assets/img/logo-parca-corp.svg" alt="Parça Corp" class="brand-logo" />
+      </a>
 
-        <h1 class="blog-title">Desventuras em Série com o Parça</h1>
-        <p class="subtitle">o blog</p>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
 
-        <div class="contact-section">
-            <a href="mailto:alessandra@parcacorp.com.br" class="contact-item email">
-                <span class="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="2" y="4" width="20" height="16" rx="2" />
-                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                    </svg>
-                </span>
-                <span>alessandra@parcacorp.com.br</span>
-            </a>
+      <nav class="site-nav" id="siteNav" aria-label="Navegação principal">
+        <a href="/index.html" data-nav="inicio">Início</a>
+        <a href="/consultoria.html" data-nav="consultoria">Consultoria</a>
+        <a href="/colecao.html" data-nav="colecao">Coleção</a>
+        <a href="/manifesto.html" data-nav="manifesto">Manifesto</a>
+        <a href="/lab.html" data-nav="lab">Laboratório</a>
+        <a href="/contato.html" data-nav="contato">Contato</a>
+      </nav>
 
-            <a href="https://wa.me/5519989804249" target="_blank" class="contact-item whatsapp">
-                <span class="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="currentColor">
-                        <path
-                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
-                    </svg>
-                </span>
-                <span>(19) 98980-4249</span>
-            </a>
-        </div>
+      <a class="btn btn-primary header-cta"
+         href="https://wa.me/5519999619205"
+         target="_blank" rel="noopener"
+         aria-label="Falar no WhatsApp">
+        Falar no WhatsApp
+      </a>
     </div>
-</body>
+  </header>
 
+  <!-- Main -->
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="kicker">Consultoria em Inteligência Artificial</p>
+          <h1>Do caos à estrutura.</h1>
+          <p class="subtitle">
+            Implementação estratégica de IA para negócios que preferem clareza em vez de modinha.
+            Sem hype. Sem truque. Com método.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary"
+               href="https://wa.me/5519999619205"
+               target="_blank" rel="noopener">
+              Agendar diagnóstico
+            </a>
+
+            <a class="btn btn-ghost" href="/colecao.html">
+              Ver coleção
+            </a>
+          </div>
+
+          <p class="micro-note">
+            A IA pode alucinar. A gente estrutura.
+            <span class="micro-note-muted">Sim, também fazemos camisetas sobre entropia.</span>
+          </p>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-metric">
+            <span class="hero-metric-label">Entrega</span>
+            <span class="hero-metric-value">mão na massa</span>
+          </div>
+          <div class="hero-metric">
+            <span class="hero-metric-label">Foco</span>
+            <span class="hero-metric-value">processo → automação</span>
+          </div>
+          <div class="hero-metric">
+            <span class="hero-metric-label">Estilo</span>
+            <span class="hero-metric-value">humor ácido, método rigoroso</span>
+          </div>
+
+          <div class="hero-divider"></div>
+
+          <p class="hero-quote">
+            “A melhor IA do mundo não salva um processo que ninguém entende.”
+          </p>
+          <a class="text-link" href="/manifesto.html">Ler o manifesto →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- IA QUE ESTRUTURA -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>IA com método.</h2>
+          <p class="section-subtitle">
+            A Parça Corp organiza, implementa e treina. Você sai com estrutura, não com “demo bonita”.
+          </p>
+        </div>
+
+        <div class="grid-4">
+          <article class="card">
+            <h3>Diagnóstico estratégico (30 min)</h3>
+            <p>Clareza rápida sobre onde a IA faz sentido — e onde é só barulho.</p>
+            <ul class="bullets">
+              <li>mapa de oportunidades</li>
+              <li>risco e viabilidade</li>
+              <li>próximos passos</li>
+            </ul>
+            <a class="text-link" href="/consultoria.html">Como funciona →</a>
+          </article>
+
+          <article class="card">
+            <h3>Estruturação de processos</h3>
+            <p>Organização antes da automação. Porque IA sem base vira loteria cara.</p>
+            <ul class="bullets">
+              <li>fluxos e SOPs</li>
+              <li>documentação</li>
+              <li>padrões operacionais</li>
+            </ul>
+            <a class="text-link" href="/consultoria.html">Ver detalhes →</a>
+          </article>
+
+          <article class="card">
+            <h3>Automação & agentes</h3>
+            <p>Integrações e rotinas que tiram peso da operação e aumentam consistência.</p>
+            <ul class="bullets">
+              <li>workflows</li>
+              <li>assistentes e agentes</li>
+              <li>monitoramento básico</li>
+            </ul>
+            <a class="text-link" href="/consultoria.html">Aplicações reais →</a>
+          </article>
+
+          <article class="card">
+            <h3>Treinamentos</h3>
+            <p>IA aplicada para equipe e liderança — com prática, casos e critério.</p>
+            <ul class="bullets">
+              <li>prompting útil</li>
+              <li>boas práticas</li>
+              <li>governança leve</li>
+            </ul>
+            <a class="text-link" href="/consultoria.html">Formatos →</a>
+          </article>
+        </div>
+
+        <div class="cta-strip">
+          <div>
+            <p class="cta-title">Quer começar pelo caminho curto?</p>
+            <p class="cta-subtitle">Agenda o diagnóstico e sai com direção (e sem autoengano).</p>
+          </div>
+          <a class="btn btn-primary"
+             href="https://wa.me/5519999619205"
+             target="_blank" rel="noopener">
+            Falar no WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- IA QUE VESTE -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>IA que veste.</h2>
+          <p class="section-subtitle">
+            Conceitual, minimalista e com a acidez necessária para atravessar 2026.
+            Compra via parceira oficial (Reserva Ink).
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <article class="product-card">
+            <div class="product-tag">Coleção</div>
+            <h3>Entropia</h3>
+            <p>“Sem consciência, toda ordem tende ao caos.”</p>
+            <a class="btn btn-ghost" href="/colecao.html">Ver na coleção</a>
+          </article>
+
+          <article class="product-card">
+            <div class="product-tag">Coleção</div>
+            <h3>Nem tudo precisa de IA</h3>
+            <p>Uma frase simples — e um tapa filosófico na moda do momento.</p>
+            <a class="btn btn-ghost" href="/colecao.html">Ver na coleção</a>
+          </article>
+
+          <article class="product-card">
+            <div class="product-tag">Coleção</div>
+            <h3>Da alucinação ao tédio de conferir</h3>
+            <p>Porque “copiar e colar” virou trabalho de auditoria existencial.</p>
+            <a class="btn btn-ghost" href="/colecao.html">Ver na coleção</a>
+          </article>
+        </div>
+
+        <div class="section-actions">
+          <a class="btn btn-primary" href="/colecao.html">Ver coleção</a>
+          <a class="text-link" href="/manifesto.html">Por que isso existe →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MANIFESTO (resumo) -->
+    <section class="section">
+      <div class="container">
+        <div class="manifesto">
+          <h2>Dados honestos. IA honesta.</h2>
+          <p>
+            Inteligência Artificial amplifica o que já existe. Se a base é caótica, o resultado também será.
+            Estrutura precede escala. Consciência precede automação.
+          </p>
+          <p class="manifesto-small">
+            Entropia é natural. Desorganização é opcional.
+          </p>
+
+          <div class="manifesto-actions">
+            <a class="btn btn-ghost" href="/manifesto.html">Ler manifesto completo</a>
+            <a class="btn btn-primary"
+               href="https://wa.me/5519999619205"
+               target="_blank" rel="noopener">
+              Quero estruturar meu negócio
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LAB (teaser) -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Laboratório Parça Corp.</h2>
+          <p class="section-subtitle">
+            Testes, bastidores, falhas documentadas e aplicação prática (sem romantização de IA).
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <article class="post-card">
+            <h3>O que automatizar primeiro (sem quebrar a operação)</h3>
+            <p>Um checklist prático para priorizar automações com impacto real.</p>
+            <span class="post-meta">Estratégia • 6 min</span>
+          </article>
+
+          <article class="post-card">
+            <h3>Prompt bom não salva processo ruim</h3>
+            <p>Por que “melhorar o prompt” às vezes é só maquiagem operacional.</p>
+            <span class="post-meta">IA aplicada • 5 min</span>
+          </article>
+
+          <article class="post-card">
+            <h3>Alucinação: do meme ao risco</h3>
+            <p>Como lidar com erros de IA sem cair no pânico nem na ingenuidade.</p>
+            <span class="post-meta">Boas práticas • 7 min</span>
+          </article>
+        </div>
+
+        <div class="section-actions">
+          <a class="btn btn-ghost" href="/lab.html">Ir para o Laboratório</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="section">
+      <div class="container">
+        <div class="final-cta">
+          <h2>Vamos estruturar isso direito.</h2>
+          <p>
+            Se você está cansada(o) de “IA por IA”, vem pelo método.
+            Se veio pelo humor, fica pelo resultado.
+          </p>
+          <div class="final-cta-actions">
+            <a class="btn btn-primary"
+               href="https://wa.me/5519999619205"
+               target="_blank" rel="noopener">
+              Falar no WhatsApp
+            </a>
+            <a class="btn btn-ghost" href="/consultoria.html">Ver consultoria</a>
+          </div>
+          <p class="micro-note micro-note-center">
+            www.parcacorp.com.br • Parça Corp © 2026 • Estrutura antes da escala.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-brand">Parça Corp</p>
+        <p class="footer-note">Consultoria em IA com método, humor ácido e implementação prática.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="/consultoria.html">Consultoria</a>
+        <a href="/colecao.html">Coleção</a>
+        <a href="/manifesto.html">Manifesto</a>
+        <a href="/lab.html">Laboratório</a>
+        <a href="/contato.html">Contato</a>
+      </div>
+
+      <div class="footer-cta">
+        <a class="btn btn-primary"
+           href="https://wa.me/5519999619205"
+           target="_blank" rel="noopener">
+          WhatsApp
+        </a>
+        <p class="footer-mini">Estrutura antes da escala.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="/assets/js/nav.js" defer></script>
+  <script src="/assets/js/main.js" defer></script>
+</body>
 </html>
