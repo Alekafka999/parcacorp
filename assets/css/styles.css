@@ -1,0 +1,71 @@
+:root{
+  --bg: #0B0B0D;
+  --bg-soft: #1A1C20;
+  --text: #F4F1EC;
+  --muted: rgba(244,241,236,.65);
+  --line: rgba(244,241,236,.08);
+  --amber: #E6B16A;
+  --blue: #2F4BFF;
+  --radius: 16px;
+  --container: 1180px;
+}
+
+body{
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, system-ui, sans-serif;
+}
+
+.section{
+  padding: 100px 0;
+}
+
+.hero{
+  position: relative;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(rgba(11,11,13,.75), rgba(11,11,13,.85)),
+    url("../img/hero-city.jpg") center/cover no-repeat;
+}
+
+.hero h1{
+  font-size: clamp(48px, 5vw, 78px);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin-bottom: 20px;
+}
+
+.hero p{
+  color: var(--muted);
+  font-size: 18px;
+  max-width: 600px;
+}
+
+.btn{
+  padding: 14px 22px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all .3s ease;
+}
+
+.btn-primary{
+  background: var(--amber);
+  color: #000;
+}
+
+.btn-primary:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(230,177,106,.3);
+}
+
+.btn-outline{
+  border: 1px solid var(--line);
+  color: var(--text);
+}
+
+.btn-outline:hover{
+  background: rgba(255,255,255,.05);
+}
